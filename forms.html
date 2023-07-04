@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is Forms</h2>
+    <form action="backend.php">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <div>
+        <label for="Email">Emali:</label>
+        <input type="email" name="myEmail" id="Email">
+    </div>
+    <br>
+    <div>
+        <label for="Date">Date:</label>
+        <input type="date" name="myDate" id="Date">
+    </div>
+    <br>
+    <div>
+        <label for="Bonus">Bonus:</label>
+        <input type="number" name="myBonus" id="Bonus">
+    </div>
+    <br>
+    <div>
+        <label for="Eligible">Are you Eligible?:</label>
+        <input type="checkbox" name="myEligibility" id="Eligible">
+    </div>
+    <br>
+    <div>
+        Gender:<label for="Male">Male</label><input type="radio" name="myGender" id="Male"><label for="Female">Female</label><input type="radio" name="myGender" id="Female">
+    </div>
+    <br>
+    <div>
+        <label for="About">Write about yourself:</label>
+        <br><textarea name="myAbout" id="About"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="Car">Car:</label>
+        <select name="myCar" id="Car">
+            <option value="benz">Benz</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>   
+        </select> 
+    </div>
+    <br>
+    <div>
+        <label for="Submit"></label>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</form>
+   
+</body>
+</html>

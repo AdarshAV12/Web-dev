@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Password Checker</title>
+    <script type="text/javascript">
+        function checkPasswords() {
+            var password1 = document.getElementById('password1').value;
+            var password2 = document.getElementById('password2').value;
+
+            if (password1 === password2) {
+                alert("Passwords match!");
+            } else {
+                alert("Passwords do not match!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Password Checker</h1>
+    <form onsubmit="checkPasswords(); return false;">
+        <label for="password1">Password 1:</label>
+        <input type="password" id="password1" required />
+        <br />
+        <label for="password2">Password 2:</label>
+        <input type="password" id="password2" required />
+        <br />
+        <input type="submit" value="Check Passwords" />
+    </form>
+</body>
+</html>

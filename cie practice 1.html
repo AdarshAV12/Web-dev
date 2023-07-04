@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chocolates Order Form</title>
+    <script type="text/javascript">
+        function calculateTotalCost() {
+            var totalCost = 0; // Variable to store the total cost
+
+            // Check if the checkboxes are checked and add the corresponding cost
+            if (document.getElementById('milkChoc').checked) {
+                totalCost += 5; // Assuming the cost of milk chocolate is $5
+            }
+            if (document.getElementById('darkChoc').checked) {
+                totalCost += 6; // Assuming the cost of dark chocolate is $6
+            }
+            if (document.getElementById('whiteChoc').checked) {
+                totalCost += 4; // Assuming the cost of white chocolate is $4
+            }
+
+            // Display the total cost with a suitable message
+            alert("Total cost of chocolates: $" + totalCost);
+        }
+    </script>
+</head>
+<body>
+    <h1>Chocolates Order Form</h1>
+    <form>
+        <label>
+            <input type="checkbox" id="milkChoc" onclick="calculateTotalCost()" /> Milk Chocolate
+        </label>
+        <br />
+        <label>
+            <input type="checkbox" id="darkChoc" onclick="calculateTotalCost()" /> Dark Chocolate
+        </label>
+        <br />
+        <label>
+            <input type="checkbox" id="whiteChoc" onclick="calculateTotalCost()" /> White Chocolate
+        </label>
+        <br />
+        <input type="button" value="Submit" onclick="calculateTotalCost()" />
+    </form>
+</body>
+</html>
